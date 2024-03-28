@@ -731,6 +731,61 @@ body.light-theme{
     margin-bottom: 0;
 }
 
+.section__pic-container {
+    display: flex;
+    height: 350px;
+    width: 350px;
+    margin: auto 0;
+  }
+  
+.section__text {
+    align-self: center;
+    text-align: center;
+  }
+  
+.section__text p {
+    font-weight: 600;
+  }
+  
+.section__text__p1 {
+    text-align: center;
+  }
+  
+.section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+.title {
+    font-size: 3rem;
+    text-align: center;
+  }
+.btn-container {
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.icon {
+    cursor: pointer;
+    height: 3rem;
+}
+
+@media screen and (min-width:600px){
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+        flex-wrap: wrap;
+    }
+}
 @media screen and (min-width: 700px) {
 
     .trending-news-box{
