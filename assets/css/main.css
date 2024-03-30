@@ -59,6 +59,7 @@ img{
     max-width: 100%;
 }
 
+
 input,
 button {
   font: inherit;
@@ -124,6 +125,9 @@ body.light-theme{
 .logo{
     font-size: var(--font-size-md);
     color: var(--light-color);
+}
+.read-more{
+    color: brown;
 }
 
 .menu{
