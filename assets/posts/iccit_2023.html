@@ -8,8 +8,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.jpg">
     <!-- Remix icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- Swiper.js styles -->
     <link rel="stylesheet" href="../css/swiper-bundle.min.css"/>
     <!-- Custom styles -->
@@ -93,30 +91,79 @@
     <section class="blog-post section-header-offset">
         <div class="blog-post-container container">
             <div class="blog-post-data">
-                <h3 class="title blog-post-title">Is FPGA the future?</h3>
+                <h3 class="title blog-post-title">FPGA based ANN classifier for Bengali Handwritten Digit Recognition</h3>
                 <div class="article-data">
                     <span>March 28th 2024</span>
                     <span class="article-data-spacer"></span>
                     <span>4 Min read</span>
                 </div>
-                <img src="../images/featured/fpga.webp" alt="">
+                <img src="../images/older_posts/ICCIT_2023.jpg" alt="">
             </div>
 
             <div class="container">
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eius possimus hic eligendi distinctio rerum incidunt, esse quasi eum molestiae ducimus ipsam quae, aliquid ullam placeat dolorum nulla vero. Quam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente repellat consequatur culpa, repudiandae aut dolores iusto. Rem natus soluta, dolores, ad deleniti, aut dolorem corrupti quasi amet unde delectus hic?
-                </p>
-                
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eius possimus hic eligendi distinctio rerum incidunt, esse quasi eum molestiae ducimus ipsam quae, aliquid ullam placeat dolorum nulla vero. Quam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero quod necessitatibus, aspernatur pariatur asperiores earum quas adipisci veritatis quidem facilis! Nihil veniam quaerat nulla possimus, asperiores vero voluptatum placeat. Eveniet!
+                    In order to accurately and quickly recognize Bengali handwritten digits and characters, this paper suggests
+                     an FPGA-based hardware accelerator design of ANN for handwritten Bengali character recognition applications. 
+                     To discover the best FPGA design for the various categorization rates, a study of network designs is first undertaken. 
+                     Sigmoid as well as ReLU neurons integrated by Xilinx Vivado workspace and an axi DMA controller created in Verilog Hardware 
+                     Description Language (HDL) make up the majority of its components. It is clear that sigmoid-based function implementation exceeds ReLU-based 
+                     implementation for very tiny data widths (such as 4 and 8 bits). 
+                     The maximum detection accuracy for Sigmoid implementation is 94.00%, and the maximum for ReLU is 87.00%. Finally,
+                      this hardware upgrade considerably increased processing speed by 4 times compared to software implementation and about 27 times faster in terms of 
+                      existing CPU-based hardware implementation, in addition to maintaining recognition accuracy the same as software equivalence. Also, the power consumption 
+                      is reduced by more than half of its existing solution as discussed before. As a result, the fast and accurate recognition of Bengali handwritten numbers 
+                      with low power consumption was made possible by our specialized ANN models with FPGA capabilities.
+                    
                 </p>
 
                 <blockquote class="quote">
-                    <p><span><i class="ri-double-quotes-l"></i></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates, laboriosam voluptatum quos non consequuntur nesciunt necessitatibus tempora quod inventore corporis rem nihil itaque, at provident minus aliquam veritatis. Labore?  <span><i class="ri-double-quotes-r"></i></span></p>
+                    <p><span><i class="ri-double-quotes-l"></i></span> After a through study a double layer network is
+
+                        implemented on FPGA that considerably increased the recog-
+                        nition speed by 4 times compared to software implementation
+                        
+                        and about 27 times speed up in terms of existing CPU-
+                        based hardware implementation in addition to maintaining
+                        
+                        recognition accuracy same as software equivalence.
+                         <span><i class="ri-double-quotes-r"></i></span></p>
                 </blockquote>
             
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eius possimus hic eligendi distinctio rerum incidunt, esse quasi eum molestiae ducimus ipsam quae, aliquid ullam placeat dolorum nulla vero. Quam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero quod necessitatibus, aspernatur pariatur asperiores earum quas adipisci veritatis quidem facilis! Nihil veniam quaerat nulla possimus, asperiores vero voluptatum placeat. Eveniet!
+                    As artificial intelligence (AI) strives to imitate the human brain
+                    from the beginning, detecting anything is a key task in the
+                    field of Al. As an illustration, consider pattern recognition
+                    and digit recognition. Digit recognition is a specialty that
+                    machines excel at. To handle this task, several algorithms
+                    are used, including K-Nearest Neighbor, Neural Network,
+                    Support Vector Machine, Gaussian Naive Bayes Decision
+                    Trees, Random Forests, and others. The researchers have
+                    always found it difficult to recognize Bengali numerals. This
+                    is because Bengali digits are very similar to each other.
+                    Artificial neural networks (ANN) are an advanced technology
+                    in image recognition, and their implementation with software
+                    alone cannot achieve real-time requirements. As a result, there
+                    is a growing demand to implement ANN accelerator hardware.
+                    The nature of both ANN architectures is parallel. In contrast,
+                    FPGAs outperform GPUs and CPUs because they support
+                    more parallelism and use less power. Also, FPGAs are devices
+                    that can be reconfigured; we can alter the ANN algorithms by
+                    altering the FPGA’s circuitry. As a result, ANN models can
+                    now operate more quickly and efficiently than conventional
+                    CPUs.
+                    The following are the main contributions of our research work: <br>
+                    • We have proposed a lightweight ANN architecture with
+                    only 31580 parameters and deployed the architecture into
+                    an FPGA using Verilog HDL. <br>
+                    • Our model is capable of accurately recognizing Bengali
+                    handwritten number digits with an accuracy of 94.0%
+                    while increasing overall computation speed by 4x times
+                    for the first time in its kind. <br>
+                    • The FPGA module is integrated into an IP for deployment
+                    as a standalone device for the Bengali Handwritten Digit
+                    Recognizer.
+
+                    <a href="https://ieeexplore.ieee.org/document/10440974" class="read-more">Read More Here</a>
                 </p>
 
                 <div class="author d-grid">
